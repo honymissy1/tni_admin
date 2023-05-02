@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid #ddd;
+    align-items: center;
+}
+
+.user{
+    display: flex;
+    font-size: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: auto
+}
+
+.logo img{
+    width: 100%;
+}
+
+
+
+
+/* Porjects */
+
+.projects{
+    width: 80vw;
+    height: 300px;
+    margin: 20px auto;
+    /* border: 1px solid */
+}
+
+.line-clamp {
+    color: rgb(162, 148, 148);
+}
+
+.search {
+    min-width: 100%;
+    margin: 20px auto;
+
+}
+
+
+.projects-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.new{
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.new-flex{
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 15px;
+    display: flex;
+    cursor: pointer;
+    flex: 1;
+    height: 220px;
+    text-align: center
+}
+
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    max-height: 3em; 
+    color: rgb(105, 101, 101);
+}
+
+
+
+/* Login Page */
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-div{
+    width: 70%;
+    height: max-content;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.left{
+    flex: 1;
+    min-width: 300px;
+    max-width: 200px;
+}
+
+.left img{
+    width: 100%
+}
+
+.form{
+    padding: 50px;
+    flex: 1;
+    /* border: 1px solid; */
+    max-width: 400px;
+    min-width:300px;
+    margin: 0px auto;
+    background: #34e89e;
+    border-radius: 10px;
+}
+
+
+/* .......Login Input.... */
+
+#root > div > div > div.form > form > span:nth-child(1){
+    width: 100%;
+
+}
+
+#root > div > div > div.form > form > span:nth-child(2){
+    width: 100%
+}
+
+
+@media screen and (max-width: 720){
+    .new{
+        width: 100%;
+        max-width: 100%;
+    }
+} 
