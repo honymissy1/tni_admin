@@ -1,6 +1,6 @@
 import { Radio, Space, Tabs } from 'antd';
 import { useState, useEffect } from 'react';
-import Projects from '../../../admin/src/components/projects';
+import Projects from './projects';
 const { TabPane } = Tabs;
 
 function Tab() {
@@ -20,7 +20,7 @@ function Tab() {
   return (
     <>
       <Tabs tabPosition={tabPosition} style={{paddingLeft: '20px',width: "auto", height: '100vh', fontWeight:"600"}}>
-      <TabPane tab="Projects" key="1">
+      <TabPane tab="Project" key="1">
         <Projects />
       </TabPane>
       {/* <TabPane tab="Tab 2" key="2">
