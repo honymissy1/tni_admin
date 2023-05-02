@@ -131,7 +131,7 @@ nav {
 }
 
 .form{
-    padding: 50px;
+    padding: 40px 10px;
     flex: 1;
     /* border: 1px solid; */
     max-width: 400px;
@@ -155,6 +155,9 @@ nav {
 
 
 @media screen and (max-width: 720){
+    form{
+        padding: 20px
+    }
     .new{
         width: 100%;
         max-width: 100%;
